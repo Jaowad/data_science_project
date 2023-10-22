@@ -2,8 +2,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sys
 
 def check_missing_values(df):
+    missing_values = df.isnull().sum()
+
+    print(missing_values)
+
     pass 
 
 
