@@ -13,6 +13,12 @@ def check_missing_values(df):
 
 
 def check_duplicate_rows(df):
+    # Check for duplicate rows
+    duplicate_rows = df[df.duplicated()]
+
+    # Print duplicate rows
+    print("Duplicate Rows:")
+    print(duplicate_rows)
     pass
 
 
@@ -25,6 +31,7 @@ def check_class_imbalance(df):
 
 
 def check_correlation(df):
+
     pass
 
 
